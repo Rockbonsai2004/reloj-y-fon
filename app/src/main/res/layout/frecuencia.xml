@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFF8F3"
+    android:padding="24dp">
+
+    <!-- Título centrado -->
+    <TextView
+        android:id="@+id/tituloHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❤️ Frecuencia cardiaca"
+        android:textColor="#D97706"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Texto de frecuencia centrado -->
+    <TextView
+        android:id="@+id/texto_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frecuencia: -- BPM"
+        android:textColor="#92400E"
+        android:textSize="18sp"
+        android:background="#FEE9D1"
+        android:padding="12dp"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

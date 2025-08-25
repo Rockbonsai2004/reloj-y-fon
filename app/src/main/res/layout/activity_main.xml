@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F3"
+    android:padding="12dp">
+
+    <!-- Línea guía al 85% de la altura para no pasarnos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloReloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shekador de zalud"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#4B2E05"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imagen más pequeña para que no empuje al botón -->
+    <ImageView
+        android:id="@+id/logoReloj"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/like"
+        android:contentDescription="Logo"
+        app:layout_constraintTop_toBottomOf="@id/tituloReloj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón con margen inferior controlado -->
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar seguimiento"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:backgroundTint="#D97706"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/logoReloj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom" />
+</androidx.constraintlayout.widget.ConstraintLayout>
